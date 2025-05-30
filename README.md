@@ -1,18 +1,26 @@
 # User Authentication API
+
 A Django REST API for user registration, login, and access to protected routes using JWT.
 
-## Endpoints
-### Register a New User
-   POST http://127.0.0.1:8000/api/register/
-   Content-Type: application/json
+---
 
-   Request Body
-    {
-      "username": "testuser",
-      "password": "password123",
-      "email": "testuser@gmail.com",
-      "name": "Test User"
-    }
+## Endpoints
+
+### Register a New User
+
+**POST** `/api/register/`  
+**Content-Type:** `application/json`
+
+#### Request Body
+
+```json
+{
+  "username": "testuser",
+  "password": "password123",
+  "email": "testuser@gmail.com",
+  "name": "Test User"
+}
+
 
   Success Response:
   Code: 200 OK
